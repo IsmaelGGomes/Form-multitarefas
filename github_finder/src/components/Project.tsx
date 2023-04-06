@@ -1,17 +1,18 @@
 import React from "react";
 import { ProjectProps } from "../types/project";
 
+
 export const Project = ({
     name_repositorio,
     language,
-    size,
-    star_count
-}:ProjectProps) => {
-    console.log(language);
+    star_count,
+    size
+}: ProjectProps) => {
+    console.log(name_repositorio)
     return (
 
         <>
-            <div className=""><p>{size}</p></div>
+            <div className=""><p>{language}</p></div>
         </>
     );
 }
